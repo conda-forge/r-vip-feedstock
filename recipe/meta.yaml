@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vip_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vip/vip_{{ version }}.tar.gz
-  sha256: d4532f2c8863edac17736d56e63c3877a32b3e99c4d88b8a0eed6089bbee60f6
+  sha256: e56e1bbc4f9e10668affc65f7254230c56d57fb88145100a70fb97e0652670fc
 
 build:
   merge_build_host: True  # [win]
