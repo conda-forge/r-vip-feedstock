@@ -3,7 +3,7 @@ About r-vip
 
 Home: https://koalaverse.github.io/vip/index.html, https://github.com/koalaverse/vip/
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-vip-feedstock/blob/master/LICENSE.txt)
 
