@@ -5,11 +5,9 @@ Home: https://koalaverse.github.io/vip/index.html, https://github.com/koalaverse
 
 Package license: GPL (>= 2)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-vip-feedstock/blob/master/LICENSE.txt)
 
 Summary: A general framework for constructing variable importance plots from  various types of machine learning models in R. Aside from some standard model- specific variable importance measures, this package also provides model- agnostic approaches that can be applied to any supervised learning algorithm. These include an efficient permutation-based variable importance measure as  well as novel approaches based on partial dependence plots (PDPs) and  individual conditional expectation (ICE) curves which are described in  Greenwell et al. (2018) <arXiv:1805.04755>. An experimental method for  quantifying the relative strength of interaction effects is also included (see  the previous reference for details).
-
-
 
 Current build status
 ====================
