@@ -1,4 +1,4 @@
-{% set version = "0.2.2" %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vip_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vip/vip_{{ version }}.tar.gz
-  sha256: 8ff46022ac1db76fef5e6c8c47687014073f952c2162c2f0d755c77f67539b93
+  sha256: a5abd0f7910bf46ccef181d29b32c4923fd3402ef8e0daa42156a7a3abf35be3
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -49,14 +49,13 @@ test:
 
 about:
   home: https://koalaverse.github.io/vip/index.html, https://github.com/koalaverse/vip/
-  license: GPL (>= 2)
-  summary: A general framework for constructing variable importance plots from  various types of machine learning models in R. Aside from some standard model- specific
-    variable importance measures, this package also provides model- agnostic approaches that can be applied to any supervised learning algorithm. These include an
-    efficient permutation-based variable importance measure as  well as novel approaches based on partial dependence plots (PDPs) and  individual conditional expectation
-    (ICE) curves which are described in  Greenwell et al. (2018) <arXiv:1805.04755>. An experimental method for  quantifying the relative strength of interaction
+  license: GPL-2.0-or-later
+  summary: A general framework for constructing variable importance plots from  various types of machine learning models in R. Aside from some standard model- specific variable importance measures, this package also provides model- agnostic approaches that can be applied to any supervised learning algorithm. These include
+    an efficient permutation-based variable importance measure as  well as novel approaches based on partial dependence plots (PDPs) and  individual conditional expectation (ICE) curves which are described in  Greenwell et al. (2018) <arXiv:1805.04755>. An experimental method for  quantifying the relative strength of interaction
     effects is also included (see  the previous reference for details).
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
