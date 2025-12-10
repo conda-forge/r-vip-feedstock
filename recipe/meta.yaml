@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vip_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vip/vip_{{ version }}.tar.gz
-  sha256: b2e7cca31b88d76ed57912c6b820a17ac8124be919847646547b6136d291a59f
+  sha256: 2d08cecebc21166f4e3e187b4a21c43936540625d1dc41697eedb5b0dd673238
 
 build:
   number: 0
