@@ -1,4 +1,4 @@
-{% set version = "0.4.5" %}
+{% set version = "0.4.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vip_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vip/vip_{{ version }}.tar.gz
-  sha256: 989f87f3a063202278bd62652860e3635a482df72d0fa0a0222387514e9505bd
+  sha256: 7252281b986b2ac369f74d7768d0da338207089c8592fe9cca28629f4f688554
 
 build:
   number: 0
@@ -43,9 +43,9 @@ test:
 about:
   home: https://koalaverse.github.io/vip/index.html, https://github.com/koalaverse/vip/
   license: GPL-2.0-or-later
-  summary: A general framework for constructing variable importance plots from  various types of machine learning models in R. Aside from some standard model- specific variable importance measures, this package also provides model- agnostic approaches that can be applied to any supervised learning algorithm. These include
-    an efficient permutation-based variable importance measure as  well as novel approaches based on partial dependence plots (PDPs) and  individual conditional expectation (ICE) curves which are described in  Greenwell et al. (2018) <arXiv:1805.04755>. An experimental method for  quantifying the relative strength of interaction
-    effects is also included (see  the previous reference for details).
+  summary: A general framework for constructing variable importance plots from  various types of machine learning models in R. Aside from some standard model- specific variable importance measures, this package also provides model- agnostic approaches that can be applied to any supervised learning algorithm. These 
+    include an efficient permutation-based variable importance measure as  well as novel approaches based on partial dependence plots (PDPs) and  individual conditional expectation (ICE) curves which are described in  Greenwell et al. (2018) <arXiv:1805.04755>. An experimental method for  quantifying the relative 
+    strength of interaction effects is also included (see  the previous reference for details).
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
